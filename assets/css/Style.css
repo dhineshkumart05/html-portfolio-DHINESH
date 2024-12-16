@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bgcolor : #1b1f24 ;
+    --btnColor : #12bdff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+header{
+    background-color:var(--bgcolor);
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+
+ul li{
+    margin-right: 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    /* justify-content: space-evenly; */
+}
+
+ul li a:hover{
+    color: var(--btnColor);
+}
+
+header button{
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: var(--bgcolor);
+    border: 1px solid var(--btnColor);
+    color: var(--btnColor);
+    border-radius: 5px;
+}
+
+header button:hover{
+    cursor: pointer;
+    background-color: var(--btnColor);
+    color: white;
+}
+
+header .logo{
+    color: var(--btnColor);
+    font-weight: 700;
+    /* font-style: italic; */
+    font-size: larger;
+    letter-spacing: 2px;
+
+}
+header a{
+    text-decoration: none;
+}
