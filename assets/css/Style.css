@@ -13,6 +13,7 @@
 
 body{
     font-family: "Poppins", sans-serif;
+  
 }
 header{
     background-color:var(--bgcolor);
@@ -22,24 +23,24 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-ul{
+header ul{
     list-style: none;
     display: flex;
     /* justify-content: space-around; */
     /* align-items: center; */
 }
 
-ul li{
+header ul li{
     margin-right: 25px;
 }
 
-ul li a{
+header ul li a{
     text-decoration: none;
     color: #fff;
     /* justify-content: space-evenly; */
 }
 
-ul li a:hover{
+header ul li a:hover{
     color: var(--btnColor);
 }
 
@@ -68,4 +69,90 @@ header .logo{
 }
 header a{
     text-decoration: none;
+}
+
+
+/* Hero Section */
+
+
+
+
+section.Hero-Section{
+    background-color: var(--bgcolor);
+     color: #fff;
+     display: flex;
+     align-items: center;
+     padding: 20px 40px 0 300px;
+     justify-content: space-evenly; 
+}
+
+/* Section img{
+    
+     display: flex;
+    justify-content: space-between;
+ align-items: left; 
+width: 45%;
+height: 30%;
+} */
+
+.Hero-Section-title{
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.Hero-Section-title span{
+    color: var(--btnColor);
+} 
+
+.Hero-Section-Desc{
+    color: #c4c4c4;
+}
+
+.Hero-Section-Button{
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: var(--bgcolor);
+    border: 1px solid var(--btnColor);
+    color: var(--btnColor);
+    border-radius: 5px;
+}
+
+.Hero-Section-Button:hover{
+    cursor: pointer;
+    background-color: var(--btnColor);
+    color: white;
+}
+
+.social-icons{
+    margin: 20px 0;
+}
+
+.social-icons li{
+    margin-right: 20px;
+}
+
+ul.social-icons{
+    list-style: none;
+    display: flex;
+}
+
+.social-icons li >a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons li a > i.fa-facebook:hover{
+    color: #1877f2;
+}
+
+.social-icons li a > i.fa-linkedin:hover{
+    color: #0072b1;
+}
+
+.social-icons li a > i.fa-instagram:hover{
+    color: #feda75;
+}
+
+.social-icons li a > i.fa-twitter:hover{
+    color: #00acee;
 }
